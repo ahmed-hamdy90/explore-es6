@@ -8,23 +8,22 @@ To run one of the examples:
 node out/app.js
 ```
 
-**iF** you need to tranpiler `ES6` module and  compiles it into `ES5` compatible code in the `CommonJS` or `AMD` style, Using `ES6 Module Transpiler` tool
+**iF** you need to tranpiler `ES6` module and  compiles it into `ES5` compatible code in the `CommonJS` style, Using `ES6 Module Transpiler` tool
+
+1- first install `es6-module-transpiler` package using `npm`:
 
 ```
 node install
 ```
 
-Then run `ES6 Module Transpiler` tool  with `CommonJS` style:
+2 - run `ES6 Module Transpiler` tool  with `CommonJS` style:
+
 ```
 ./node_modules/es6-module-transpiler/bin/compile-modules convert -I scripts -o out app.js utility.js --format commonjs
 ```
-OR run `ES6 Module Transpiler` tool  with `AMD` style:
-```
-./node_modules/es6-module-transpiler/bin/compile-modules convert -I scripts -o out app.js utility.js --format amd
-```
-Open generated `app.js` file into `out/` folder and change line `require("utility");` to `require("./utility");`
+3 - Open generated `app.js` file into `out/` folder and change line `require("utility");` to `require("./utility");`
 
-Then run example:
+4 - Then run example:
 
 ```
 node out/app.js
