@@ -1,6 +1,7 @@
 "use strict";
 
-// use import keyword to import es6 modules from utility.js file
+// use import keyword to import two functions from Utility module
+// into utility.js file
 import { random, doSum } from 'utility';
 
 console.log(random()); // logs a random number

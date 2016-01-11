@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ahmed-hamdy90/explore-es6/issues"
   },
-  "homepage": "https://github.com/ahmed-hamdy90/explore-es6#readme"
+  "homepage": "https://github.com/ahmed-hamdy90/explore-es6#readme",
+  "dependencies": {
+    "es6-module-transpiler": "^0.10.0"
+  }
 }

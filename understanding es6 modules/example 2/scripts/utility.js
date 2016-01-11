@@ -1,5 +1,6 @@
 "use strict";
 
+// create Utility module as es6 module
 /**
  * Generate Random Number
  * @return {Number} random number
@@ -18,6 +19,6 @@ function sum(a, b) {
 	return a + b;
 }
 
-// use export keyword to export two es6 modules
-// also you can rename modules using (as)
+// use export keyword to export two functions into Utility module
+// also you can rename them using alias (as)
 export { generateRandom as random, sum as doSum }

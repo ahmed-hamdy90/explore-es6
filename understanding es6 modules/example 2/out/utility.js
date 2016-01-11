@@ -1,6 +1,7 @@
 "use strict";
 "use strict";
 
+// create Utility module as es6 module
 /**
  * Generate Random Number
  * @return {Number} random number
