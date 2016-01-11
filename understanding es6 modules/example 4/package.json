@@ -1,0 +1,27 @@
+{
+  "name": "example-4",
+  "version": "1.0.0",
+  "description": "example 4 for understading es6 modules",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ahmed-hamdy90/explore-es6.git"
+  },
+  "keywords": [
+    "es6",
+    "export",
+    "import"
+  ],
+  "author": "ahmedhamdy90",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahmed-hamdy90/explore-es6/issues"
+  },
+  "homepage": "https://github.com/ahmed-hamdy90/explore-es6#readme",
+  "dependencies": {
+    "es6-module-transpiler": "^0.10.0"
+  }
+}
