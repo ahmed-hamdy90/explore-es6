@@ -3,7 +3,7 @@
 // Export Utils Module using module.exports
 module.exports = {
   count
-}
+};
 
 /**
  * Counter function
