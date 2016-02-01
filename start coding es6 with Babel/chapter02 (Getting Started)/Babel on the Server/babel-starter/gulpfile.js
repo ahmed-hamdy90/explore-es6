@@ -29,8 +29,8 @@ gulp.task('build', function () {
 // which copy index html file under client folder
 // into dist folder
 gulp.task('copy', function () {
-	return gulp.src('client/index.html')
-	           .pipe(gulp.dest('./dist'));
+	gulp.src('client/index.html')
+	    .pipe(gulp.dest('./dist'));
 });
 
 // create Gulp task named watch
