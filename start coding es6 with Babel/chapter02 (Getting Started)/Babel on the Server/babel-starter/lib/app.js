@@ -5,6 +5,11 @@ var express = require('express');
 var app     = express();
 // create server using express app
 var server  = require('http').createServer(app);
+// import our local portable module 
+var iso     = require('../portable');
+
+// use portable module to validate Id value 
+console.log(iso.validateId('USER_12345'));
 
 // make root Route for app to read index.html file under dist Folder
 app
