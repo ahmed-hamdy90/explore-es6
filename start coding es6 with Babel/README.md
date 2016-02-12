@@ -11,7 +11,7 @@ will Use `babel-starter` Project in this chapter so first install project depend
 ```
 npm install
 ```
-Then Run `gulp` tasks which create `dist` Folder Which contains `app.bundle.js` and `index.html` files:
+Then Run `gulp` tasks to create `dist` Folder which contains `app.bundle.js` and `index.html` files:
 
 ```
 ./node_modules/.bin/gulp default
