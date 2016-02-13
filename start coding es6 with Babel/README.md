@@ -6,7 +6,7 @@ will Using [`Babel.js`](https://babeljs.io/) to Compile ES6 Code into ES5 Code c
 
 #### Chapter 2 [Getting Started]
 
-will Use `babel-starter` Project in this chapter so first install project dependencies using `npm`:
+Both examples into Chapter 2 will Use `babel-starter` Project in this chapter so first install project dependencies using `npm`:
 
 ```
 npm install
@@ -17,16 +17,16 @@ Then Run `gulp` tasks to create `dist` Folder which contains `app.bundle.js` and
 ./node_modules/.bin/gulp default
 ```
 
-###### Babel on the Client
+###### Example 01: Babel on the Client
 
 Just open `index.html` file under `dist` Folder using web Browser
 
-###### Babel on the Server
+###### Example 02: Babel on the Server
 
-first run the server with `node.js`
+First run the server with `node.js`
 
 ```
 node server.js
 ```
 
-When server is running Just open web Browser on `localhost:9000`
+Once server has been running, Open web Browser on `localhost:9000`
