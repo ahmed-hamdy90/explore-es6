@@ -13,7 +13,9 @@ gulp.task('build', function () {
 		debug: true
 	})
 	// tranform using Babel
-	.transform(babelify)
+	.transform(babelify, {
+		presets: [ 'es2015' ]
+	})
 	// collect the files and thier dependencies
 	// into one single javascript file
 	.bundle()

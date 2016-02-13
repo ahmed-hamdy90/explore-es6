@@ -17,11 +17,17 @@ class Square extends Polygon {
 	constructor(length=10) {
 		// use ES6 feature super Keyword to Parent class
 		super(length, length);
-		this.name = 'Square'; 
+		this.name = 'Square';
 	}
 
-	get area() {
-		return this.length * this.length;
+  /**
+   * Get Square Area
+   * <br/>Using get syntax for area property of Square Object
+   * {@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get}
+   * @return {integer} square area value
+   */
+	get area () {
+		return this.height * this.width;
 	}
 }
 
