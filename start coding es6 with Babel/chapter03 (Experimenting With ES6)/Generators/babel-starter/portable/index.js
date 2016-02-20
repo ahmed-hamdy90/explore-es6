@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = {
-	validateId
+	validateId,
+	// make this as create a function will exited
+	// and return a Generator Object
+	fibonacci: fibonacci()
 };
 
 // use new ES6 const keyword to declare Constant variables
@@ -24,6 +27,21 @@ function validateId(id) {
  * @return {Generator} Generator Object
  */
 function* fibonacci() {
-	var n1 = 0;
-	var n2 = 1;	
+	// first fibonacci number
+	var fn1 = 1;
+	// second fibonacci number
+	var fn2 = 1;
+    // infinite loop
+	while (true) {
+		var current = fn2;
+		fn2 = fn1;
+		fn2 += current;
+		// yield return the same value which passed with next() method
+		// So we will use return value to reset fibonacci sequence 
+		var reset = yield current;
+		if (reset) {
+			fn1 = 1;
+			fn2 = 1;
+		}
+	}	
 }
