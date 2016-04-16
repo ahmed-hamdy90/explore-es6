@@ -6,8 +6,7 @@
  * {@link http://babeljs.io/docs/usage/polyfill/#usage-in-browser}
  */
 import "babel-polyfill";
-// import Utils Module
-var utils = require('./utils');
+
 // import our local portable module
 var iso       = require('../../portable');
 var fibonacci = iso.fibonacci; 

@@ -1,24 +1,10 @@
 'use strict';
 
 module.exports = {
-	validateId,
 	// make this as create a function will exited
 	// and return a Generator Object
 	fibonacci: fibonacci()
 };
-
-// use new ES6 const keyword to declare Constant variables
-const ID_PREFIX = 'USER_';
-
-/**
- * validate Id value that it's type is string
- * and begin with ID_PREFIX constant value
- * @param  {*} id  id value
- * @return {boolean} result of id validation
- */
-function validateId(id) {
-	return typeof id === 'string' && id.indexOf(ID_PREFIX) === 0;
-}
 
 /**
  * fibonacci method is a Generator function to apply Fibonacci Sequence
