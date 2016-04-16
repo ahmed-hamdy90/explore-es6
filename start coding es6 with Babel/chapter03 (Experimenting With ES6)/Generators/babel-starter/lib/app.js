@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+ * To use new Ecmascript6 feature (Generators) with Node app,
+ * Must require babel-polyfill at entry point into node app.
+ * {@link http://babeljs.io/docs/usage/polyfill/#usage-in-node-browserify-webpack}
+ */
+require("babel-polyfill");
+
 var express = require('express');
 // create express app
 var app     = express();

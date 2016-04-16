@@ -27,15 +27,22 @@ function validateId(id) {
  * @return {Generator} Generator Object
  */
 function* fibonacci() {
-	// first fibonacci number
+	/**
+	 * first fibonacci number
+	 * @type {Number}
+	 */
 	var fn1 = 1;
-	// second fibonacci number
+
+	/**
+	 * second fibonacci number
+	 * @type {Number}
+	 */
 	var fn2 = 1;
     // infinite loop
 	while (true) {
 		var current = fn2;
 		fn2 = fn1;
-		fn2 += current;
+		fn1 += current;
 		// yield return the same value which passed with next() method
 		// So we will use return value to reset fibonacci sequence 
 		var reset = yield current;
