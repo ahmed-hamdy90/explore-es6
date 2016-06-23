@@ -38,9 +38,9 @@ function isInRange(n) {
   return n <= MAX_HEIGHT && n >= MIN_HEIGHT;
 }
 
-// this will throws an error As con not redeclare constant veriable(i.e: reSet value of a constant)
-// @see {@link https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const} for more description about const keyword
-//MAX_HEIGHT = 250;
-
 console.log('is 300 in range', isInRange(300));
 console.log('is 100 in range', isInRange(100));
+
+// this will throws an error As con not redeclare constant veriable(i.e: reSet value of a constant)
+// @see {@link https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const} for more description about const keyword
+// MAX_HEIGHT = 250;
