@@ -38,9 +38,17 @@ function isInRange(n) {
   return n <= MAX_HEIGHT && n >= MIN_HEIGHT;
 }
 
-console.log('is 300 in range', isInRange(300));
-console.log('is 100 in range', isInRange(100));
-
 // this will throws an error As con not redeclare constant veriable(i.e: reSet value of a constant)
 // @see {@link https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/const} for more description about const keyword
 // MAX_HEIGHT = 250;
+
+console.log('is 300 in range', isInRange(300));
+console.log('is 100 in range', isInRange(100));
+
+// use new ES6 let keyword to declare a block scope local variable
+for(let i = 0; i < 10; i++) {
+  console.log('inside', i);
+}
+// will throws error -> ReferenceError: i is not defined
+// As i is block local veriable into for-loop block
+//console.log('outside', i);
