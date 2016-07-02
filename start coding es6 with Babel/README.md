@@ -6,7 +6,7 @@ will Using [`Babel.js`](https://babeljs.io/) to Compile ES6 Code into ES5 Code c
 
 All examples under Chapter 02, Chapter 03 and More Examples folders will Use `babel-starter` project, So
 
- - first install project dependencies using `npm`:
+ - First install project dependencies using `npm`:
 
   ```
   npm install
@@ -26,7 +26,7 @@ Just open `index.html` file under `dist` Folder using web Browser
 
 ###### Example 02: Babel on the Server
 
-- run the server with `node.js`
+- Run the server with `node.js`
 
   ```
   node server.js
@@ -39,7 +39,7 @@ Just open `index.html` file under `dist` Folder using web Browser
 ###### Example 02: Generators
 ###### Example 03: Other Cool Stuf
 
-- run the server with `node.js`
+- Run the server with `node.js`
 
   ```
   node server.js
@@ -47,7 +47,7 @@ Just open `index.html` file under `dist` Folder using web Browser
 
 - Once server has been running, Open web Browser on `localhost:9000`
 
-#### More Examples: applying more examples on new ES6 feature which we had discovered into Chapter 02 and Chapter 03
+#### More Examples: applying more examples on new ES6 features which we had discovered into Chapter 02 and Chapter 03
 
 ###### Generators/Example 01
 ###### Generators/Example 02
@@ -55,13 +55,10 @@ Just open `index.html` file under `dist` Folder using web Browser
 ###### Other Cool Stuf/Example 01: const keyword
 ###### Other Cool Stuf/Example 02: let keyword
 
- - run the server with `node.js`
+ - Run the server with `node.js`
 
    ```
    node server.js
    ```
 
  - Once server has been running, Open web Browser on `localhost:9000`
-
-
-    
