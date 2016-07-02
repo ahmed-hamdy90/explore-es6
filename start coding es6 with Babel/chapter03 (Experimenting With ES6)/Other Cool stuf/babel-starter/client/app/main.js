@@ -86,3 +86,34 @@ function callback(response) {
   ... etc
 }
 */
+
+// use new ES6 feature: Arrow functions {@link https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions}
+/**
+ * an Array of json Objects
+ * @type {Array}
+ */
+var arr = [{name: 'Jane'}, {name: 'Jason'}, {name: 'Mike'}];
+// Old way to extract name property in Objects into array
+// need to install Underscore.js library to use it {@link http://underscorejs.org/#property}
+// var strArr = arr.map(_.property('name'));
+// Now we can use Arrow function syntax to extract name property in Objects into array
+var strArr = arr.map((x) => x.name);
+console.log(strArr);
+
+// when use Anonymous function into block scope function
+// you may face Lexical this problem {@link https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions#Lexical_this}
+SomeClass.prototype.someMethod = function () {
+  // must store a referance to this object
+  var self = this;
+  this.points.forEach(function() {
+    self.x++;// we can use this.x As this will refer to this of Anonymous function
+    self.y++
+  });
+};
+// Arrow functions solve that problem
+SomeClass.prototype.someMethod = function () {
+  this.points.forEach((point) => {
+    this.x++;
+    this.y++;
+  });
+};
